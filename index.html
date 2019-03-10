@@ -7,13 +7,15 @@
     <title>Cuini | Structure</title>
     
     <!-- Fonts -->
-    
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Satisfy" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Font-awesome CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Light CSS -->
+    <link rel="stylesheet" href="css/themes/light/light.css">
     
   </head>
   <body>
@@ -28,30 +30,29 @@
           <!-- Start of Hero -->
           <section class="header__hero">
             <div class="container">
-              <h1 class="header__title">Lorem ipsum dolor</h1>
-              <p class="header__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto cupiditate possimus ipsam facere vitae beatae porro, quibusdam quas fugiat ex magni quo eaque iure aspernatur, ut autem molestiae alias odit?</p>
-              <button class="btn btn-primary btn-lg">Email Me!</button>
+              <h1 class="header__title">Hi, I'm Queeny</h1>
+              <p class="header__description">Hello World! Thank you for visiting my site. If you are interested in hiring me, I'm available whether it is a <em>Freelance Job</em> or a <em>Full Time Job</em>. Feel free to check me out.</p>
+              <div><a href="mailto:queenykenn.amar@gmail.com" class="btn btn-default btn-lg btn--email">Email Me!</a></div>
             </div>
           </section>
           <!-- /.end of hero -->
           <!-- Start of Navbar -->
           <section class="header__navbar" id="nav-stick">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
               <div class="container">
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="#"><img src="images/light/logo.png" alt="Header Logo" class="img-fluid header__logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav ml-lg-auto">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">About</a>
-                    <a class="nav-item nav-link" href="#">Experience</a>
-                    <a class="nav-item nav-link" href="#">Skills</a>
-                    <a class="nav-item nav-link" href="#">Projects</a>
-                    <a class="nav-item nav-link" href="#">Education</a>
-                    <a class="nav-item nav-link" href="#">Hobbies</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#exp">Experience</a>
+                    <a class="nav-item nav-link" href="#skills">Skills</a>
+                    <a class="nav-item nav-link" href="#project">Projects</a>
+                    <a class="nav-item nav-link" href="#education">Education</a>
+                    <a class="nav-item nav-link" href="#hobbies">Hobbies</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
                   </div>
                 </div>
               </div>
@@ -66,16 +67,17 @@
       <!-- Start of Main Content -->
       <div class="main-content">
         <!-- Start of Full Block Section-->
-        <section class="full-block">
+        <section class="full-block" id="about">
           <!-- Start of About Section-->
           <section class="about">
             <div class="container">
               <div class="row">
                 <div class="col-lg-4">
-                  <img src="" alt="About Image" class="img-fluid about__image">
+                  <img src="images/light/me.png" alt="About Image" class="img-fluid about__image">
                 </div>
                 <div class="col-lg-8">
-                  <p class="about__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ex sint esse, corrupti nesciunt voluptas officia velit hic commodi minus culpa in accusamus necessitatibus fugit voluptate modi vitae, reiciendis error?</p>
+                  <p class="about__subtitle">This is my story</p>
+                  <p class="about__description">Hi! My name is <em>Queeny Kenn A. Amar</em> or sometimes I use "Cuini" as my pen name. My objective is to obtain a position where I can maximize my programming, designing skills and job experience. To contribute superior project and operations management skills and experience in an IT Service Management role. To work in a dynamic professional environment with a growing organization and utilize my creativity and innovative thinking for benefit of the organization and myself.</p>
                 </div>
               </div>
             </div>
@@ -83,16 +85,110 @@
           <!-- /.end of about section -->
 
           <!-- Start of Full Block Section-->
-          <section class="full-block">
+          <section class="full-block" id="exp">
             <!-- Start of Exp Section-->
             <section class="exp">
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-4">
+                  <div class="col">
                     <h3 class="exp__title">Job Experience</h3>
                   </div>
+                  <div class="col-12">
+                    <p class="exp__description text-left"><em>Full time Job.</em></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/aspi.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
                   <div class="col-lg-8">
-                    <p class="exp__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ex sint esse, corrupti nesciunt voluptas officia velit hic commodi minus culpa in accusamus necessitatibus fugit voluptate modi vitae, reiciendis error?</p>
+                    <p class="exp__company-name mb-0">Author Solutions Phil. Inc. (ASPI)</p>
+                    <p class="exp__description">Current | Front-end Developer</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/kredo.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">Kredo IT Abroad</p>
+                    <p class="exp__description">July 2018 - November 2018 | Part Time IT Teacher</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/bt.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">Beneterra Consolidated Corp.</p>
+                    <p class="exp__description">June 2017 - July 2017 | Graphics Designer / Web Developer</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/itnov.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">IT Novation</p>
+                    <p class="exp__description">March 2017 - August 2017 | Graphics Designer / Front-end Developer</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/healthme.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">HealthMe</p>
+                    <p class="exp__description">October 2016 - July 2017 | Co-Founder</p>
+                    <p class="exp__description">Co-founder of a Start-up Company. Won the 1st Masskara Hackathon.</p>
+                  </div>
+                  <div class="col-12">
+                      <p class="exp__description text-left"><em>Freelance Job.</em></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/b2b.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">Back 2 Basic Manila</p>
+                    <p class="exp__description">November 2018 - December 2018 | Graphics Designer / Front-end Developer</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/wellspa.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">Well Spa</p>
+                    <p class="exp__description">August 2017 - November 2017 | Graphics Designer / Front-end Developer</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/entirebody.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">Entirebody</p>
+                    <p class="exp__description">March 2017 | Front-end Developer</p>
+                  </div>
+                  <div class="col-12">
+                      <p class="exp__description text-left"><em>OJT</em></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/ubiquity.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">Ubiquity Global Services</p>
+                    <p class="exp__description">December 2016 - January 2017 | Front-end Developer</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/lasalle.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">University of St. La Salle</p>
+                    <p class="exp__description">October 2016 - November 2016 | Front-end Developer</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/bnefit.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">BNefit</p>
+                    <p class="exp__description">October 2016 - November 2016 | Front-end Developer</p>
+                  </div>
+                  <div class="col-12">
+                    <p class="exp__description text-left"><em>Capstone</em></p>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="images/light/company/okidoki.png" alt="Company Logo" class="img-fluid exp__image">
+                  </div>
+                  <div class="col-lg-8">
+                    <p class="exp__company-name mb-0">OkiDoki Crafts Store</p>
+                    <p class="exp__description">June 2016 - October 2016 | Web Developer</p>
                   </div>
                 </div>
               </div>
@@ -102,7 +198,7 @@
         <!-- /.end of full block section-->
 
         <!-- Start of Full Block Section-->
-        <section class="full-block">
+        <section class="full-block" id="skills">
           <!-- Start of Projects Section-->
           <section class="skill">
             <div class="container">
@@ -110,8 +206,212 @@
                 <div class="col-lg-4">
                   <h3 class="skill__title">Skills</h3>
                 </div>
+                <div class="col-12">
+                  <p class="skill__description">Graphic Skills</p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Adobe Photoshop</p>
+                </div>
                 <div class="col-lg-8">
-                  <p class="skill__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ex sint esse, corrupti nesciunt voluptas officia velit hic commodi minus culpa in accusamus necessitatibus fugit voluptate modi vitae, reiciendis error?</p>
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Adobe Illustrator</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="86">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="skill__description">Programming Languages</p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">HTML</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">CSS</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="95">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">SASS</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="95">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Less</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="70">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">PHP</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="40">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">SQL</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="44" aria-valuemin="0" aria-valuemax="44">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">jQuery</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="66">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">JavaScript</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">AJAX</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="skill__description">Content Management System (CMS)</p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Wordpress</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="83">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Sitecore</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Ektron</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="87">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="skill__description">Frontend & Backend Framework</p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Bootstrap</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="92">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Laravel</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="74">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">CodeIgniter</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="81">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="skill__skill-title">Version Control</p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">SVN</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="96">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">GIT</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="progress mb-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="91">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <p class="skill__description">Others</p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Salesforce</p>
+                </div>
+                <div class="col-lg-8">
+                  <p class="skill__description">is an American cloud-based software company headquartered in San Francisco, California.</p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Unbounce</p>
+                </div>
+                <div class="col-lg-8">
+                  <p class="skill__description">is a Canadian software company headquartered in Vancouver, BC. The company produces landing pages for websites, and is the host of the annual Call to Action Conference.</p>
+                </div>
+                <div class="col-lg-4">
+                  <p class="skill__skill-title text-lg-right">Filezilla</p>
+                </div>
+                <div class="col-lg-8">
+                  <p class="skill__description">is a free software, cross-platform FTP application, consisting of FileZilla Client and FileZilla Server. Client binaries are available for Windows, Linux, and macOS, server binaries are available for Windows only.</p>
                 </div>
               </div>
             </div>
@@ -121,16 +421,121 @@
         <!-- /.end of full block section-->
 
         <!-- Start of Full Block Section-->
-        <section class="full-block">
+        <section class="full-block" id="project">
           <!-- Start of Projects Section-->
           <section class="projects">
             <div class="container">
               <div class="row">
-                <div class="col-lg-4">
+                <div class="col">
                   <h3 class="projects__title">Projects</h3>
-                </div>
-                <div class="col-lg-8">
-                  <p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ex sint esse, corrupti nesciunt voluptas officia velit hic commodi minus culpa in accusamus necessitatibus fugit voluptate modi vitae, reiciendis error?</p>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <img src="images/light/ah.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title"><a href="https://www.authorhouse.com/" class="projects__link">AuthorHouse <em>(Ongoing)</em></a></p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/bp.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title"><a href="https://www.balboapress.com/en-gb" class="projects__link">Balboa Press</a></p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/par.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title"><a href="https://www.partridgepublishing.com/" class="projects__link">Partridge</a></p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/xl.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title"><a href="https://www.xlibris.com/" class="projects__link">Xlibris</a></p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/okidoki.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title">OkiDoki Crafts Store</p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/hg.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title">HourGlass Cebu Band</p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/alerquake.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title">AlertQuake</p>
+                    </div>
+                    <!-- <div class="col-lg-3">
+                      <img src="" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title">Ubiquity Global Services Inventory</p>
+                    </div> -->
+                    <div class="col-lg-3">
+                      <img src="images/light/terraville.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title">Terraville</p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/healthme.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title"><a href="http://healthmeph.azurewebsites.net/" class="projects__link">HealthMe</a></a></p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/itnov.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title">ITNovation</p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/b2b.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title">Back 2 Basic Logo</p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/mr.png" alt="Project Images" class="img-fluid projects__image">
+                      <p class="projects__project-title">Mr Logo</p>
+                    </div>
+                    <div class="col-12">
+                      <p><em>Graphics Design</em></p>
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item1.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item2.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item3.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item4.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item5.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item6.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item7.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item8.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item9.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item10.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item11.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item12.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item13.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item14.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item16.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item17.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                    <div class="col-lg-3">
+                      <img src="images/light/designs/item18.png" alt="Project Images" class="img-fluid projects__image mb-3">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -140,16 +545,47 @@
         <!-- /.end of full block section-->
 
         <!-- Start of Full Block Section-->
-        <section class="full-block">
+        <section class="full-block" id="education">
           <!-- Start of Education Section-->
           <section class="education">
             <div class="container">
               <div class="row">
-                <div class="col-lg-4">
+                <div class="col">
                   <h3 class="education__title">Education</h3>
-                </div>
-                <div class="col-lg-8">
-                  <p class="education__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ex sint esse, corrupti nesciunt voluptas officia velit hic commodi minus culpa in accusamus necessitatibus fugit voluptate modi vitae, reiciendis error?</p>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <img src="images/light/company/lasalle.png" alt="School Logo" class="img-fluid education__logo">
+                    </div>
+                    <div class="col-lg-8">
+                      <p class="education__school-name mb-0">University of St. La Salle</p>
+                      <p class="education__description mb-0"><em>Graduated SY 2017</em></p>
+                      <p class="education__description">Bachelor of Science in Information Technology Major in Web and Mobile Development</p>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="images/light/company/sanag.png" alt="School Logo" class="img-fluid education__logo">
+                    </div>
+                    <div class="col-lg-8">
+                      <p class="education__school-name mb-0">Colegio San Agustin</p>
+                      <p class="education__description mb-0"><em>SY 2012</em></p>
+                      <p class="education__description">Bachelor of Science in Accountancy</p>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="images/light/company/dhbnhs.png" alt="School Logo" class="img-fluid education__logo">
+                    </div>
+                    <div class="col-lg-8">
+                      <p class="education__school-name mb-0">Doña Hortencia Salas Benedicto National High School</p>
+                      <p class="education__description mb-0"><em>Graduated SY 2011</em></p>
+                      <p class="education__description">Bachelor of Science in Accountancy</p>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="images/light/company/south.png" alt="School Logo" class="img-fluid education__logo">
+                    </div>
+                    <div class="col-lg-8">
+                      <p class="education__school-name mb-0">La Carlota South Elementary School - I</p>
+                      <p class="education__description mb-0"><em>Graduated SY 2008</em></p>
+                      <p class="education__description">Bachelor of Science in Accountancy</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -159,16 +595,28 @@
         <!-- /.end of full block section-->
 
         <!-- Start of Full Block Section-->
-        <section class="full-block">
+        <section class="full-block" id="hobbies">
           <!-- Start of Hobbies Section-->
           <section class="hobbies">
             <div class="container">
               <div class="row">
-                <div class="col-lg-4">
+                <div class="col">
                   <h3 class="hobbies__title">Hobbies</h3>
-                </div>
-                <div class="col-lg-8">
-                  <p class="hobbies__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ex sint esse, corrupti nesciunt voluptas officia velit hic commodi minus culpa in accusamus necessitatibus fugit voluptate modi vitae, reiciendis error?</p>
+                  <p class="hobbies__description">A hobby a day keeps the doldrums away.</p>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <img src="images/light/hobbies/food.png" alt="Hobbies Image" class="hobbies__image img-fluid">
+                      <p class="text-center">Food Trip</p>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="images/light/hobbies/plants.png" alt="Hobbies Image" class="hobbies__image img-fluid">
+                      <p class="text-center">Planting</p>
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="images/light/hobbies/dogs.png" alt="Hobbies Image" class="hobbies__image img-fluid">
+                      <p class="text-center">Playing with my Dogs</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -178,18 +626,21 @@
         <!-- /.end of full block section-->
 
         <!-- Start of Full Block Section-->
-        <section class="full-block">
+        <section class="full-block" id="contact">
           <!-- Start of Contact Section-->
           <section class="contact">
             <div class="container">
               <div class="row">
                 <div class="col-lg-6">
                   <h3 class="contact__title">Contact</h3>
-                  <p class="contact__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ex sint esse, corrupti nesciunt voluptas officia velit hic commodi minus culpa in accusamus necessitatibus fugit voluptate modi vitae, reiciendis error?</p>
+                  <p class="contact__description">Send me an email by clicking the button on the right side or download my resume. I hope to here from you soon!</p>
+                  <p class="contact__name">Cuini Amar</p>
                 </div>
                 <div class="col-lg-6">
-                  <button class="btn btn-primary mb-3 mb-md-0">Send me a Message</button>
-                  <button class="btn btn-primary">Download my Resume</button>
+                  <div class="contact__button">
+                    <button class="btn btn-default btn--email mb-3">Send me an Email</button><br/>
+                    <a href="files/amar-resume.pdf" class="btn btn-default btn--resume">Download my Resume</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -206,7 +657,7 @@
             <div class="row">
               <!-- Start of Footer Top -->
               <div class="col-lg-4">
-                <img src="" alt="Footer Logo" class="img-fluid main-footer__top-logo">
+                <img src="images/light/logo.png" alt="Footer Logo" class="img-fluid main-footer__top-logo">
                 <ul class="ftr-social">
                   <li class="ftr-social__item"><a href="#" class="ftr-social__link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                   <li class="ftr-social__item"><a href="#" class="ftr-social__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -226,7 +677,10 @@
                 </ul>
               </div>
               <div class="col-lg-4">
-                <p class="main-footer__description text-center text-lg-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rem, vero deserunt labore veritatis ipsam at officia laboriosam nobis omnis obcaecati, perferendis quod, asperiores pariatur rerum qui dolores accusamus et?</p>
+                <p class="main-footer__description text-center text-lg-left">Reach Me Out @</strong></p>
+                <p class="main-footer__description text-center text-lg-left mb-0">Email: <strong>amarqueenykenn@gmail.com / queenykenn.amar@gmail.com</strong></p>
+                <p class="main-footer__description text-center text-lg-left mb-0">Phone: <strong>(032) 342 8689</strong></p>
+                <p class="main-footer__description text-center text-lg-left">Mobile: <strong>09173570089</strong></p>
               </div>
               <!-- /.end of footer top -->
             </div>
@@ -255,9 +709,9 @@
     <!-- Bootstrap JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- Main JavaScript -->
+    <!-- Navbar JavaScript -->
     <script src="js/navbar.js"></script>
-    <!-- <script src="js/smart-nav.js"></script> -->
+    <!-- Main JavaScript -->
     <script src="js/main.js"></script>
   </body>
 </html>
