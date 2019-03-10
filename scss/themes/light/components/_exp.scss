@@ -1,0 +1,44 @@
+/* =========================================================================
+  * Exp Style
+   ========================================================================= */
+
+  .exp {
+    &__title {
+      text-align: center;
+      color: darken($chip, 20%);
+      padding-bottom: 1em;
+      @include desktopUp {
+        text-align: left;
+        margin-top: 5em;
+      }
+    }
+
+    &__company-name {
+      color: darken($pearl, 30%);
+      text-align: center;
+      font-size: 1.2rem;
+
+      @include desktopUp {
+        text-align: left;
+      }
+    }
+
+    &__description {
+      text-align: center;
+      @include desktopUp {
+        text-align: left;
+      }
+    }
+
+    &__image {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 1em;
+
+      @include desktopUp {
+        padding-bottom: 2.5em;
+        margin: 0;
+        float: right;
+      }
+    }
+  }

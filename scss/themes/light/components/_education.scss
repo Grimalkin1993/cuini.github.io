@@ -1,0 +1,41 @@
+/* =========================================================================
+  * Education Style
+   ========================================================================= */
+
+  .education {
+    &__title {
+      color: darken($chip, 20%);
+      padding-bottom: 1em;
+      @include desktopUp {
+        margin-top: 5em;
+      }
+    }
+
+    &__logo {
+      margin: 0 auto;
+      display: block;
+      padding-bottom: 1em;
+
+      @include desktopUp {
+        margin: 0;
+        float: right;
+        padding-bottom: 2em;
+      }
+    }
+
+    &__school-name {
+      color: darken($pearl, 30%);
+      text-align: center;
+      font-size: 1.2rem;
+
+      @include desktopUp {
+        text-align: left;
+      }
+    }
+
+    &__description {
+      @include desktopUp {
+        text-align: left;
+      }
+    }
+  }

@@ -1,0 +1,59 @@
+// ============================================================================
+// Utilities - Variable file along with starting point Mixins, Helpers and Placeholders.
+// ============================================================================
+
+@import "utilities/variables";
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/breakpoint-mixins";
+@import "utilities/helpers";
+@import "utilities/js-mediaquery";
+
+
+// ============================================================================
+// Vendors / 3rd Party plugins
+// ============================================================================
+
+// @import "vendors/";
+
+
+// ============================================================================
+// Base - Site defaults
+// ============================================================================
+
+@import "base/bootstrap-override";
+@import "base/default-style";
+@import "base/sticky-footer";
+@import "base/full-block";
+
+
+// ============================================================================
+// Layout
+// ============================================================================
+
+@import "layout/header";
+@import "layout/footer";
+
+
+// ============================================================================
+// Components
+// ============================================================================
+
+@import "components/js-classes";
+@import "components/about";
+@import "components/exp";
+@import "components/skill";
+@import "components/projects";
+@import "components/education";
+@import "components/hobbies";
+@import "components/contact";
+// @import "components/smart-nav";
+@import "components/ftr-social";
+@import "components/ftr-section";
+
+
+// ============================================================================
+// Pages
+// ============================================================================
+
+// @import "pages/";

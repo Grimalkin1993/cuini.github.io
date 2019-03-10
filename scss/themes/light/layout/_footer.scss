@@ -1,0 +1,23 @@
+/* =========================================================================
+  * Header Style
+   ========================================================================= */
+
+  .main-footer {
+    &__top {
+      background: lighten($hawkes, 8%);
+      padding: 2em 0;
+
+      @include desktopUp {
+        padding: 3em 0;
+      }
+    }
+
+    &__copyright {
+      color: $pearl;
+    }
+
+    &__top-logo {
+      width: 30%;
+      padding-bottom: 1em;
+    }
+  }

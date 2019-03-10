@@ -1,0 +1,29 @@
+/* =========================================================================
+  * Hobbies Style
+   ========================================================================= */
+
+  .hobbies {
+    &__title {
+      color: darken($chip, 20%);
+      @include desktopUp {
+        margin-top: 5em;
+      }
+    }
+
+    &__description {
+      padding-bottom: 1em;
+      @include desktopUp {
+        padding-bottom: 2em;
+      }
+    }
+
+    &__image {
+      margin: 0 auto;
+      display: block;
+      border: 1px solid darken($pearl, 15%);
+      padding: 0.5em;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 1em;
+    }
+  }

@@ -1,0 +1,26 @@
+/* =========================================================================
+ *	A utility element to check mediaquery/breakpoint in JS
+ *	Be sure to add the ff. div on the page that you want to check:
+ *	<div id="js-mediaquery"></div>
+	 ========================================================================= */
+
+   #js-mediaquery {
+    display: none !important;
+    content: "xs";
+  
+    // Small devices (tablets, 768px and up)
+    @include tabletUp {
+      content: "sm";
+    }
+  
+    // Medium devices (desktops, 992px and up)
+    @include desktopUp {
+      content: "md";
+    }
+  
+    // Large devices (large desktops, 1200px and up)
+    @include widescreenUp {
+      content: "lg";
+    }
+  
+  }

@@ -1,0 +1,45 @@
+/* =========================================================================
+  * Button Style
+   ========================================================================= */
+
+  .btn-default {
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: 0.4s ease;
+    z-index: 1;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    border-radius: 3em;
+    &:before,
+    &:after {
+      transition: 0.3s ease;
+      content: '';
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  //Button Email
+  .btn--email {
+    background: darken($chip, 20%);
+    border-color: darken($chip, 25%);
+    &:hover {
+      background: darken($chip, 25%);
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  //Button Resume
+  .btn--resume {
+    background: darken($hawkes, 20%);
+    border-color: darken($hawkes, 25%);
+    &:hover {
+      background: darken($hawkes, 25%);
+      color: $white;
+      text-decoration: none;
+    }
+  }

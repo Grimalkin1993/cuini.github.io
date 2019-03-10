@@ -1,0 +1,29 @@
+// ============================================================================
+// Site defaults
+// ============================================================================
+
+// Base font size
+// this will affect all 'rem' and 'em' based units
+// need to be declared in root 'html'
+$base-font: 16px !default;
+$font-size-base: $base-font !default; // fallback for bootstrap variable
+
+// Fonts
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Satisfy', cursive;
+
+// Initial Variables
+//these are initial colors that most likely will change
+// =================================
+$mischka: #aeb0b4;
+
+// Special variables
+// these are special colors that most likely will NOT change
+$hawkes: #dbdfe4;
+$pearl: #e0d4ca;
+$chip: #f3ebe4;
+
+// =================================
+
+// Derived Variables
+// computed colors

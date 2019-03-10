@@ -1,0 +1,18 @@
+/* =========================================================================
+  * Skill Style
+   ========================================================================= */
+
+   .skill {
+    &__title {
+      text-align: center;
+      @include desktopUp {
+        text-align: left;
+      }
+    }
+    &__description {
+      text-align: center;
+      @include desktopUp {
+        text-align: left;
+      }
+    }
+  }

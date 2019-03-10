@@ -1,0 +1,21 @@
+/* =========================================================================
+  * About Style
+   ========================================================================= */
+  
+  .about {
+    &__image {
+      display: block;
+      margin: 0 auto;
+
+      @include desktopUp {
+        margin: 0;
+      }
+    }
+
+    &__description {
+      text-align: center;
+      @include desktopUp {
+        text-align: left;
+      }
+    }
+  }

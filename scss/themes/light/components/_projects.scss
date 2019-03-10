@@ -1,0 +1,34 @@
+/* =========================================================================
+  * Projects Style
+   ========================================================================= */
+  
+  .projects {
+    &__title {
+      color: darken($chip, 20%);
+      padding-bottom: 1em;
+      @include desktopUp {
+        margin-top: 5em;
+      }
+    }
+
+    &__project-title {
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    &__link {
+      color: $mischka;
+      &:hover {
+        color: darken($mischka, 10%);
+        text-decoration: none;
+      }
+    }
+
+    &__image {
+      border: 1px solid darken($pearl, 15%);
+      padding: 0.5em;
+      margin: 0 auto;
+      display: block;
+    }
+  }

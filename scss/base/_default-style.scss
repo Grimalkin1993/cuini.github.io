@@ -1,0 +1,39 @@
+/* =========================================================================
+ *	Base styles
+	 ========================================================================= */
+
+  html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    font-size: $font-size-base; // this will affect all 'rem' and 'em' based units
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+
+  button,
+  button:active,
+  button:focus,
+  a
+  a:active,
+  a:focus {
+    outline: none !important;
+  }

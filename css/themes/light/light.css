@@ -1,0 +1,870 @@
+/* =========================================================================
+ *	Mixins
+	 ========================================================================= */
+/* =========================================================================
+ *	Helper classes
+ *	styles that usually do one thing only - single-responsibility classes,
+ *	so the use of !important is justifiable here
+	 ========================================================================= */
+/* center an element */
+.centered {
+  margin: 0 auto !important;
+}
+
+/* font family */
+/* put padding top and bottom on an element */
+.spaced {
+  padding-top: 1.5em !important;
+  padding-bottom: 1.5em !important;
+}
+
+/* remove padding on element */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* remove margin on element */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* removes border-radius */
+.no-border-radius {
+  border-radius: 0 !important;
+}
+
+/* removes card footer style */
+.no-card-footer {
+  background: none !important;
+  border: none !important;
+}
+
+/* removes underline in link when hovered */
+.no-underline:hover {
+  text-decoration: none;
+}
+
+.z-depth-0 {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.z-depth-1 {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-1-half {
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.z-depth-2 {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-3 {
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-4 {
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+
+.z-depth-5 {
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================================================
+ *	A utility element to check mediaquery/breakpoint in JS
+ *	Be sure to add the ff. div on the page that you want to check:
+ *	<div id="js-mediaquery"></div>
+	 ========================================================================= */
+#js-mediaquery {
+  display: none !important;
+  content: "xs";
+}
+
+@media (min-width: 768px) {
+  #js-mediaquery {
+    content: "sm";
+  }
+}
+
+@media (min-width: 992px) {
+  #js-mediaquery {
+    content: "md";
+  }
+}
+
+@media (min-width: 1200px) {
+  #js-mediaquery {
+    content: "lg";
+  }
+}
+
+/* =========================================================================
+ *	Bootstrap Overrides
+   ========================================================================= */
+/* =========================================================================
+ *	Base styles
+	 ========================================================================= */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+button,
+button:active,
+button:focus,
+a
+a:active,
+a:focus {
+  outline: none !important;
+}
+
+/* =========================================================================
+ *	Sticky Footer Fix
+	 ========================================================================= */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.main-wrapper > *:first-child {
+  padding-top: 1px;
+  margin-top: -1px;
+}
+
+.main-content {
+  padding-bottom: 150px;
+}
+
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+}
+
+/* =========================================================================
+ *	Full Container Style
+   ========================================================================= */
+.full-block {
+  padding: 2em 0;
+  min-height: 400px;
+}
+
+/* =========================================================================
+  * Header Style
+   ========================================================================= */
+.header__hero {
+  text-align: center;
+  padding: 3em 0;
+}
+
+@media (min-width: 992px) {
+  .header__hero {
+    text-align: left;
+  }
+}
+
+/* =========================================================================
+  * Header Style
+   ========================================================================= */
+.main-footer__top-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-footer__bottom {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 0.5em 0;
+}
+
+/* =========================================================================
+  * JS Classes
+   ========================================================================= */
+.is-scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* =========================================================================
+  * About Style
+   ========================================================================= */
+.about__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .about__image {
+    margin: 0;
+  }
+}
+
+.about__description {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .about__description {
+    text-align: left;
+  }
+}
+
+/* =========================================================================
+  * Exp Style
+   ========================================================================= */
+.exp__title {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .exp__title {
+    text-align: left;
+  }
+}
+
+.exp__description {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .exp__description {
+    text-align: left;
+  }
+}
+
+/* =========================================================================
+  * Skill Style
+   ========================================================================= */
+.skill__title {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .skill__title {
+    text-align: left;
+  }
+}
+
+.skill__description {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .skill__description {
+    text-align: left;
+  }
+}
+
+/* =========================================================================
+  * Projects Style
+   ========================================================================= */
+.projects__title {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .projects__title {
+    text-align: left;
+  }
+}
+
+/* =========================================================================
+  * Education Style
+   ========================================================================= */
+.education__title {
+  text-align: center;
+}
+
+.education__description {
+  text-align: center;
+}
+
+/* =========================================================================
+  * Hobbies Style
+   ========================================================================= */
+.hobbies__title {
+  text-align: center;
+}
+
+.hobbies__description {
+  text-align: center;
+}
+
+/* =========================================================================
+  * Contact Style
+   ========================================================================= */
+.contact {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .contact {
+    text-align: left;
+  }
+}
+
+/* =========================================================================
+  * Footer Social Media Style
+   ========================================================================= */
+.ftr-social {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.ftr-social__item {
+  display: inline-block;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin: 0.5em;
+}
+
+.ftr-social__link {
+  display: table-cell;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ftr-social__link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* =========================================================================
+  * Footer Sections Style
+   ========================================================================= */
+.ftr-section {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .ftr-section {
+    text-align: left;
+  }
+}
+
+.ftr-section__link:hover {
+  text-decoration: none;
+}
+
+/* =========================================================================
+ *	Bootstrap Overrides
+   ========================================================================= */
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+span.navbar-toggler-icon {
+  font-size: 1rem;
+}
+
+/* =========================================================================
+ *	Base styles
+	 ========================================================================= */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Satisfy", cursive;
+}
+
+p {
+  color: #aeb0b4;
+}
+
+/* =========================================================================
+  * Header Style
+   ========================================================================= */
+.header__hero {
+  background: #f2f4f5;
+}
+
+@media (min-width: 992px) {
+  .header__hero {
+    background-image: url("../../../images/light/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    min-height: 550px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__hero {
+    min-height: 650px;
+  }
+}
+
+.header__title {
+  color: #c4ad9a;
+}
+
+@media (min-width: 992px) {
+  .header__title {
+    padding-top: 1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__title {
+    padding-top: 1.5em;
+  }
+}
+
+.header__description {
+  padding: 1em 0;
+}
+
+@media (min-width: 992px) {
+  .header__description {
+    padding-right: 35em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__description {
+    padding-right: 45em;
+  }
+}
+
+.header__navbar {
+  background: #f2f4f5;
+  border-top: 1px solid #eaecef;
+}
+
+.header__logo {
+  width: 40%;
+}
+
+/* =========================================================================
+  * Header Style
+   ========================================================================= */
+.main-footer__top {
+  background: #f2f4f5;
+  padding: 2em 0;
+}
+
+@media (min-width: 992px) {
+  .main-footer__top {
+    padding: 3em 0;
+  }
+}
+
+.main-footer__copyright {
+  color: #e0d4ca;
+}
+
+.main-footer__top-logo {
+  width: 30%;
+  padding-bottom: 1em;
+}
+
+/* =========================================================================
+  * JS Classes
+   ========================================================================= */
+.is-scrolled {
+  background: #e0d4ca;
+  border-bottom: 1px solid #cdbaaa;
+  border-top: none;
+  padding: 0.8em 0;
+}
+
+/* =========================================================================
+  * About Style
+   ========================================================================= */
+.about {
+  padding: 3em 0;
+}
+
+@media (min-width: 992px) {
+  .about {
+    padding: 4em 0;
+    margin-top: 7em;
+  }
+}
+
+.about__image {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .about__image {
+    margin: 0;
+    padding-bottom: 0;
+  }
+}
+
+.about__subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #d4b79d;
+}
+
+@media (min-width: 992px) {
+  .about__subtitle {
+    text-align: left;
+    padding-top: 4em;
+  }
+}
+
+.about__description {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .about__description {
+    text-align: left;
+  }
+}
+
+/* =========================================================================
+  * Exp Style
+   ========================================================================= */
+.exp__title {
+  text-align: center;
+  color: #d4b79d;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .exp__title {
+    text-align: left;
+    margin-top: 5em;
+  }
+}
+
+.exp__company-name {
+  color: #a88669;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .exp__company-name {
+    text-align: left;
+  }
+}
+
+.exp__description {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .exp__description {
+    text-align: left;
+  }
+}
+
+.exp__image {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .exp__image {
+    padding-bottom: 2.5em;
+    margin: 0;
+    float: right;
+  }
+}
+
+/* =========================================================================
+  * Skill Style
+   ========================================================================= */
+.skill__title {
+  text-align: center;
+  color: #d4b79d;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .skill__title {
+    text-align: left;
+    margin-top: 5em;
+  }
+}
+
+.skill__image {
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .skill__image {
+    margin: 0;
+    padding-bottom: 2.5em;
+  }
+}
+
+.skill__skill-title {
+  color: #a88669;
+  text-align: center;
+}
+
+/* =========================================================================
+  * Projects Style
+   ========================================================================= */
+.projects__title {
+  color: #d4b79d;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .projects__title {
+    margin-top: 5em;
+  }
+}
+
+.projects__project-title {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.projects__link {
+  color: #aeb0b4;
+}
+
+.projects__link:hover {
+  color: #94969b;
+  text-decoration: none;
+}
+
+.projects__image {
+  border: 1px solid #c4ad9a;
+  padding: 0.5em;
+  margin: 0 auto;
+  display: block;
+}
+
+/* =========================================================================
+  * Education Style
+   ========================================================================= */
+.education__title {
+  color: #d4b79d;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .education__title {
+    margin-top: 5em;
+  }
+}
+
+.education__logo {
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .education__logo {
+    margin: 0;
+    float: right;
+    padding-bottom: 2em;
+  }
+}
+
+.education__school-name {
+  color: #a88669;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .education__school-name {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .education__description {
+    text-align: left;
+  }
+}
+
+/* =========================================================================
+  * Hobbies Style
+   ========================================================================= */
+.hobbies__title {
+  color: #d4b79d;
+}
+
+@media (min-width: 992px) {
+  .hobbies__title {
+    margin-top: 5em;
+  }
+}
+
+.hobbies__description {
+  padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .hobbies__description {
+    padding-bottom: 2em;
+  }
+}
+
+.hobbies__image {
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #c4ad9a;
+  padding: 0.5em;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* =========================================================================
+  * Contact Style
+   ========================================================================= */
+.contact__title {
+  text-align: center;
+  color: #d4b79d;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+  .contact__title {
+    text-align: left;
+    margin-top: 4em;
+  }
+}
+
+.contact__name {
+  font-family: "Satisfy", cursive;
+  font-size: 2rem;
+  color: #baa08a;
+}
+
+.contact__button {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .contact__button {
+    padding-top: 10em;
+  }
+}
+
+/* =========================================================================
+  * Button Style
+   ========================================================================= */
+.btn-default {
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+  z-index: 1;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  border-radius: 3em;
+}
+
+.btn-default:before, .btn-default:after {
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.btn--email {
+  background: #d4b79d;
+  border-color: #ccaa8c;
+}
+
+.btn--email:hover {
+  background: #ccaa8c;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn--resume {
+  background: #a1abb8;
+  border-color: #929ead;
+}
+
+.btn--resume:hover {
+  background: #929ead;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* =========================================================================
+  * Footer Social Media Style
+   ========================================================================= */
+.ftr-social__item {
+  background: #ccaa8c;
+}
+
+/* =========================================================================
+  * Footer Sections Style
+   ========================================================================= */
+.ftr-section__link {
+  color: #baa08a;
+}
+
+.ftr-section__link:hover {
+  color: #a88669;
+  text-decoration: none;
+}

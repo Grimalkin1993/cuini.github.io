@@ -1,0 +1,31 @@
+/* =========================================================================
+  * Skill Style
+   ========================================================================= */
+
+   .skill {
+    &__title {
+      text-align: center;
+      color: darken($chip, 20%);
+      padding-bottom: 1em;
+      @include desktopUp {
+        text-align: left;
+        margin-top: 5em;
+      }
+    }
+
+    &__image {
+      margin: 0 auto;
+      display: block;
+      padding-bottom: 1em;
+
+      @include desktopUp {
+        margin: 0;
+        padding-bottom: 2.5em;
+      }
+    }
+
+    &__skill-title {
+      color: darken($pearl, 30%);
+      text-align: center;
+    }
+  }

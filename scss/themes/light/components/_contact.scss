@@ -1,0 +1,29 @@
+/* =========================================================================
+  * Contact Style
+   ========================================================================= */
+
+  .contact {
+    &__title {
+      text-align: center;
+      color: darken($chip, 20%);
+      padding-bottom: 1em;
+      @include desktopUp {
+        text-align: left;
+        margin-top: 4em;
+      }
+    }
+
+    &__name {
+      font-family: $font-secondary;
+      font-size: 2rem;
+      color: darken($pearl, 20%);
+    }
+
+    &__button {
+      text-align: center;
+
+      @include desktopUp {
+        padding-top: 10em;
+      }
+    }
+  }

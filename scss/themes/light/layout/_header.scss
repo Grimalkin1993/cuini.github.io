@@ -1,0 +1,54 @@
+/* =========================================================================
+  * Header Style
+   ========================================================================= */
+
+  .header {
+    // Hero
+    &__hero {
+      background: lighten($hawkes, 8%);
+      @include desktopUp {
+        background: {
+          image: url('../../../images/light/header-bg.png');
+          repeat: no-repeat;
+          size: 100%;
+          attachment: fixed;
+        };
+        min-height: 550px;
+      }
+      @include widescreenUp {
+        min-height: 650px;
+      }
+    }
+
+    &__title {
+      color: darken($pearl, 15%);
+      @include desktopUp {
+        padding-top: 1em;
+      }
+      @include widescreenUp {
+        padding-top: 1.5em;
+      }
+    }
+
+    &__description {
+      padding: 1em 0;
+
+      @include desktopUp {
+        padding-right: 35em;
+      }
+
+      @include widescreenUp {
+        padding-right: 45em;
+      }
+    }
+
+    // Navbar
+    &__navbar {
+      background: lighten($hawkes, 8%);
+      border-top: 1px solid lighten($hawkes, 5%);
+    }
+
+    &__logo {
+      width: 40%;
+    }
+  }

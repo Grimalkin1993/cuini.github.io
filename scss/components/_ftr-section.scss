@@ -1,0 +1,18 @@
+/* =========================================================================
+  * Footer Sections Style
+   ========================================================================= */
+
+   .ftr-section {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    @include desktopUp {
+      text-align: left;
+    }
+
+    &__link {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }

@@ -1,0 +1,40 @@
+/* =========================================================================
+  * About Style
+   ========================================================================= */
+  
+  .about {
+    padding: 3em 0;
+    @include desktopUp {
+      padding: 4em 0;
+      margin-top: 7em;
+    }
+
+    &__image {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 1em;
+
+      @include desktopUp {
+        margin: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: darken($chip, 20%);
+
+      @include desktopUp {
+        text-align: left;
+        padding-top: 4em;
+      }
+    }
+
+    &__description {
+      text-align: center;
+      @include desktopUp {
+        text-align: left;
+      }
+    }
+  }

@@ -1,0 +1,30 @@
+/* =========================================================================
+  * Footer Social Media Style
+   ========================================================================= */
+
+  .ftr-social {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+    &__item {
+      display: inline-block;
+      background: $white-dark2;
+      border-radius: 50%;
+      margin: 0.5em;
+    }
+
+    &__link {
+      display: table-cell;
+      width: 2em;
+      height: 2em;
+      vertical-align: middle;
+      text-align: center;
+      color: $white;
+
+      &:hover {
+        text-decoration: none;
+        color: $black-dark3;
+      }
+    }
+  }

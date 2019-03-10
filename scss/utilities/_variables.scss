@@ -1,0 +1,50 @@
+// ============================================================================
+// Site defaults
+// ============================================================================
+
+// Base font size
+// this will affect all 'rem' and 'em' based units
+// need to be declared in root 'html'
+$base-font: 16px !default;
+$font-size-base: $base-font !default; // fallback for bootstrap variable
+
+// Fonts
+// $font-primary: 'Open Sans', sans-serif !default;
+
+// Breakpoints - to be used as mixins
+// less than 576px is default style, mobile-first approach
+$mobileUp: '(min-width: 576px)' !default;
+$tabletUp: '(min-width: 768px)' !default;
+$desktopUp: '(min-width: 992px)' !default;
+$widescreenUp: '(min-width: 1200px)' !default;
+
+// Color Pallete
+// ============================================================================
+
+// Initial variables
+// contextual/theme colors - that can/may change
+$white: #ffffff !default;
+$black: #000000 !default;
+
+// =================================
+
+// Special variables
+// these are special colors that most likely will NOT change
+
+
+// =================================
+
+// Derived Variables
+// computed colors
+$white-dark1: darken($white, 10%) !default;
+$white-dark2: darken($white, 15%) !default;
+$white-dark3: darken($white, 20%) !default;
+$white-light1: lighten($white, 10%) !default;
+$white-light2: lighten($white, 15%) !default;
+$white-light3: lighten($white, 20%) !default;
+$black-dark1: darken($black, 10%) !default;
+$black-dark2: darken($black, 15%) !default;
+$black-dark3: darken($black, 20%) !default;
+$black-light1: lighten($black, 10%) !default;
+$black-light2: lighten($black, 15%) !default;
+$black-light3: lighten($black, 20%) !default;
